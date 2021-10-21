@@ -147,12 +147,7 @@ android {
         //     keyAlias 'androiddebugkey'
         //     keyPassword 'android'
         // }
-        release {
-            storeFile file('easyKazakh.keyStore')
-            storePassword 'Madi5234240795'
-            keyAlias 'easyKazakh'
-            keyPassword 'Madi5234240795'
-        }
+        
     }
     buildTypes {
         // debug {
