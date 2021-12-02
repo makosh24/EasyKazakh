@@ -123,6 +123,7 @@ const Home = ({navigation, route}) => {
                   marginBottom: 50,
                 }}
                 onPress={() => {
+                  // free
                   if(item.id < 4) {
                     setShowFilterModal(!showFilterModal),
                     setQuiz(item),
@@ -130,6 +131,11 @@ const Home = ({navigation, route}) => {
                   } else {
                     setAd(true);
                   }
+
+                  // cheap
+                  // setShowFilterModal(!showFilterModal),
+                  // setQuiz(item),
+                  // setSpecification(item.specification);
                 }}>
                 <Text style={{fontSize: 25, fontWeight: '700', margin: 7}}>
                   {item.title}

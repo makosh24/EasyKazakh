@@ -10,6 +10,7 @@ import {
   ImageBackground,
   Dimensions,
   Image,
+  Linking
 } from 'react-native';
 import {connect} from 'react-redux';
 
@@ -96,7 +97,7 @@ const Ad = ({isVisible, onClose, navigation, route, data, specification}) => {
               - Проверка знаний
             </Text>
             <View style={{flex: 1, justifyContent: 'space-evenly'}}>
-              <TouchableOpacity
+              {/* <TouchableOpacity
                 style={{
                   flexDirection: 'row',
                   backgroundColor: 'skyblue',
@@ -127,7 +128,7 @@ const Ad = ({isVisible, onClose, navigation, route, data, specification}) => {
                 <Text style={{color: '#fff', fontSize: 30, fontWeight: 'bold'}}>
                   4000 тг
                 </Text>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
               <TouchableOpacity
                 style={{
                   flexDirection: 'row',
@@ -136,12 +137,13 @@ const Ad = ({isVisible, onClose, navigation, route, data, specification}) => {
                   padding: 10,
                   margin: 10,
                   borderRadius: 20
-                }}>
+                }}
+                onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.Easykazakh2')}>
                 <Text style={{color: '#fff', fontSize: 30, fontWeight: 'bold'}}>
                   Навсегда
                 </Text>
                 <Text style={{color: '#fff', fontSize: 30, fontWeight: 'bold'}}>
-                  7000 тг
+                  990 тг
                 </Text>
               </TouchableOpacity>
             </View>
