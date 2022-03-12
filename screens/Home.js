@@ -9,12 +9,6 @@ import {
   TouchableOpacity,
   Dimensions,
 } from 'react-native';
-import {
-  InterstitialAd,
-  RewardedAd,
-  BannerAd,
-  TestIds,
-} from '@react-native-firebase/admob';
 
 // InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL);
 
@@ -37,8 +31,8 @@ const Home = ({navigation, route}) => {
 
   const getMovies = async () => {
     try {
-      const response = await fetch('https://nurimbagim.kz/data.json');
-      const json = await response.json();
+      const response = require('./data.json');
+      const json = response;
       setData(json.movies);
     } catch (error) {
       console.error(error);
@@ -124,18 +118,18 @@ const Home = ({navigation, route}) => {
                 }}
                 onPress={() => {
                   // free
-                  if(item.id < 4) {
-                    setShowFilterModal(!showFilterModal),
-                    setQuiz(item),
-                    setSpecification(item.specification);
-                  } else {
-                    setAd(true);
-                  }
+                  // if(item.id < 4) {
+                  //   setShowFilterModal(!showFilterModal),
+                  //   setQuiz(item),
+                  //   setSpecification(item.specification);
+                  // } else {
+                  //   setAd(true);
+                  // }
 
                   // cheap
-                  // setShowFilterModal(!showFilterModal),
-                  // setQuiz(item),
-                  // setSpecification(item.specification);
+                  setShowFilterModal(!showFilterModal),
+                  setQuiz(item),
+                  setSpecification(item.specification);
                 }}>
                 <Text style={{fontSize: 25, fontWeight: '700', margin: 7}}>
                   {item.title}
