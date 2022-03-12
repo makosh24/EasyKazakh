@@ -129,8 +129,8 @@ android {
         applicationId "com.easykazakh"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "1.6"
+        versionCode 7
+        versionName "1.7"
     }
     splits {
         abi {
@@ -147,6 +147,12 @@ android {
         //     keyAlias 'androiddebugkey'
         //     keyPassword 'android'
         // }
+        release {
+            storeFile file('easyKazakh.keyStore')
+            storePassword 'Madi5234240795'
+            keyAlias 'easyKazakh'
+            keyPassword 'Madi5234240795'
+        }
         
     }
     buildTypes {
