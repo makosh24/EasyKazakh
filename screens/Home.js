@@ -16,6 +16,8 @@ import {
   TestIds,
 } from '@react-native-firebase/admob';
 
+import * as data1 from './data.json';
+
 // InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL);
 
 // RewardedAd.createForAdRequest(TestIds.REWARDED);
@@ -37,8 +39,8 @@ const Home = ({navigation, route}) => {
 
   const getMovies = async () => {
     try {
-      const response = await fetch('https://nurimbagim.kz/data.json');
-      const json = await response.json();
+      const response = require('./data.json');
+      const json = response;
       setData(json.movies);
     } catch (error) {
       console.error(error);
