@@ -1,11 +1,11 @@
 {
-    "name": "easykazakh",
-    "short_name": "easykazakh",
+    "name": "EasyKazakh",
+    "short_name": "EasyKazakh",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Уроки казахского языка: звуки, слова и грамматика.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
