@@ -1,0 +1,2221 @@
+{
+    "title": "The Basics - Networking",
+    "description": "Your app fetched this from a remote endpoint!",
+    "movies": [
+        {
+            "id": "1",
+            "title": "Н или Ң",
+            "releaseTitle": "1977",
+            "specification": [
+                "\r",
+                "Когда мы произносим звук «Н», губы открываются, и передняя часть спинки языка приподнимается к небу. При произношении звука «Ң» губы открываются и задняя часть спинки языка приподнимается к небу. Поток воздуха выходит через носовую полость.",
+                "\n",
+                "\r",
+                "Звук Ң - носовой, смычный, заднеязычный, эквивалента не имеет. Этот звук употребляется с твердыми и мягкими гласными казахского языка.",
+                "\n",
+                "\r",
+                "В казахском языке нет специальных правил использованиябуквы Ң. Поэтому, уделяя повышенное внимание произношению этого звука, увеличивая лексикон, в котором участвует данная буква, вы будете совершать меньше ошибок.",
+                "\n",
+                "\r",
+                "На заметку!",
+                "\n",
+                "\r",
+                "При неправильном произношении звука Н-Ң меняется смысл слова."
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Қайырлы таң!",
+                            "question": "Доброе утро!"
+                        },
+                        {
+                            "answer": "Жоғары шығыңыз!",
+                            "question": "Проходите!"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Қош келдіңіз!",
+                            "question": "Добро пожаловать!"
+                        },
+                        {
+                            "answer": "Отырыңыз!",
+                            "question": "Садитесь!"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ша...ғы",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "а...",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ша...",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "же...іс",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "көле...ке",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "на...",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қа...т",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ша...сорғыш",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "бей...ефильм",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қоя...",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қауы...",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ө..ер",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қалы...дық",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "кү... (солнце)",
+                    "answer": "н",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "кү...(рабыня)",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ше...бер",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "жа...быр",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қа...ғыбас",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "қо...ыз",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ша...ырақ",
+                    "answer": "ң",
+                    "allChoices": [
+                        "н",
+                        "ң"
+                    ],
+                    "instructionText": "Выберите соответствующую букву н или ң"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "лыжи",
+                    "answer": "шаңғы",
+                    "allChoices": [
+                        "шаңғы",
+                        "шаңырақ"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "зверь",
+                    "answer": "аң",
+                    "allChoices": [
+                        "аң",
+                        "шаң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "пыль",
+                    "answer": "шаң",
+                    "allChoices": [
+                        "нан",
+                        "шаң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "победа",
+                    "answer": "жеңіс",
+                    "allChoices": [
+                        "жеңіс",
+                        "қоян"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "тень",
+                    "answer": "көлеңке",
+                    "allChoices": [
+                        "көлеңке",
+                        "қоян"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "хлеб",
+                    "answer": "нан",
+                    "allChoices": [
+                        "нан",
+                        "қант"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "сахар",
+                    "answer": "қант",
+                    "allChoices": [
+                        "қауын",
+                        "қант"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "пылесос",
+                    "answer": "шаңсорғыш",
+                    "allChoices": [
+                        "шаңсорғыш",
+                        "қаңғыбас"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "видеофильм",
+                    "answer": "бейнефильм",
+                    "allChoices": [
+                        "бейнефильм",
+                        "шеңбер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "заяц",
+                    "answer": "қоян",
+                    "allChoices": [
+                        "қоян",
+                        "қауын"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "дыня",
+                    "answer": "қауын",
+                    "allChoices": [
+                        "күн",
+                        "қауын"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "искусство",
+                    "answer": "өнер",
+                    "allChoices": [
+                        "өнер",
+                        "жаңбыр"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "невеста",
+                    "answer": "қалыңдық",
+                    "allChoices": [
+                        "қаңғыбас",
+                        "қалыңдық"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "солнце",
+                    "answer": "күн",
+                    "allChoices": [
+                        "күн",
+                        "күң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "рабыня",
+                    "answer": "күң",
+                    "allChoices": [
+                        "күн",
+                        "күң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "круг",
+                    "answer": "шеңбер",
+                    "allChoices": [
+                        "шеңбер",
+                        "шебер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "дождь",
+                    "answer": "жаңбыр",
+                    "allChoices": [
+                        "шеңбер",
+                        "жаңбыр"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "бродяга",
+                    "answer": "қаңғыбас",
+                    "allChoices": [
+                        "қаңғыбас",
+                        "көлеңке"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "жук",
+                    "answer": "қоңыз",
+                    "allChoices": [
+                        "қоңыз",
+                        "шаң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "деревянный круг на верхушке юрты",
+                    "answer": "шаңырақ",
+                    "allChoices": [
+                        "шаңырақ",
+                        "шеңбер"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Вспомогательные глаголы тұр/ жүр/ отыр/ жатыр в настоящем времени",
+            "specification": [
+                "\n",
+                "жатыр/отыр/тұр – применяется в действующих процессах",
+                "\n",
+                "\n",
+                "жүр – применяется в постоянных процессах",
+                "\n",
+                "\n",
+                "Простая форма оправдывает своё название и образуется просто – с помощью четырёх глаголов: ",
+                "тұру – стоять, жүру – идти, отыру – сидеть, жату – лежать.",
+                "\n",
+                "\n",
+                "Глагол «жату» в настоящем времени при отбрасывании суффикса «у» обретает форму «жатыр»."
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Ол кітап оқып отыр",
+                            "question": "Он читает книгу"
+                        },
+                        {
+                            "answer": "Ол сурет салып жатыр",
+                            "question": "Он рисует"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Ол мені күтіп тұр ",
+                            "question": "Он ждет меня"
+                        },
+                        {
+                            "answer": "Ол хатты пошта арқылы жіберіп жүр",
+                            "question": "Он постоянно направляет письмо через почту"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "письмо",
+                    "answer": "хат",
+                    "allChoices": [
+                        "хат",
+                        "дәптер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "стоять",
+                    "answer": "тұру",
+                    "allChoices": [
+                        "тұру",
+                        "кету"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "идти",
+                    "answer": "жүру",
+                    "allChoices": [
+                        "жүру",
+                        "келу"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "сидеть",
+                    "answer": "отыру",
+                    "allChoices": [
+                        "отыру",
+                        "тұру"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "лежать",
+                    "answer": "жату",
+                    "allChoices": [
+                        "жату",
+                        "отыру"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Екен/ғой/екен ғой",
+            "specification": [
+                "\n",
+                "Екен и екен ғой означают «оказывается»",
+                "\n",
+                "\n",
+                "Ғой  означает«это же так»",
+                "\n",
+                "\n",
+                "Примечание: если перед «ғой» глагол имеет суффикс то значение будет иметь «оказывается»",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Мен саған кітап беруім керек екен",
+                            "question": "Оказывается я должен тебе дать книгу"
+                        },
+                        {
+                            "answer": "Қарашы, мынау үлкен ғимарат екен ғой",
+                            "question": "Смотри, оказывается это большое здание"
+                        },
+                        {
+                            "answer": "Ануар сен үлкенсің ғой",
+                            "question": "Ануар ты же старший"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Кешіріңіз, Абай даңғылына қалай шығуға болады?",
+                            "question": "Извините, как дойти до проспекта Абая?"
+                        },
+                        {
+                            "answer": "Сіз жаяу жүрсіз бе?",
+                            "question": "Вы идете пешком?"
+                        }
+                    ]
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Ия, жаяу жүрген денсаулыққа пайдалы екен",
+                            "question": "Да, ходьба полезна для здоровья"
+                        },
+                        {
+                            "answer": "Жақсы, ендеше төрт көшеден кейін оңға бұрылсаңыз, Абай даңғылы болады",
+                            "question": " Хорошо, если после четырех улиц повернуть направо, будет проспект Абая"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "извините",
+                    "answer": "кешіріңіз",
+                    "allChoices": [
+                        "кешіріңіз",
+                        "өтінем"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "проспект",
+                    "answer": "даңғыл",
+                    "allChoices": [
+                        "даңғыл",
+                        "жол"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "пешком",
+                    "answer": "жаяу",
+                    "allChoices": [
+                        "жаяу",
+                        "жүгіру"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "здоровье",
+                    "answer": "денсаулық",
+                    "allChoices": [
+                        "денсаулық",
+                        "даңғыл"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "улица",
+                    "answer": "көше",
+                    "allChoices": [
+                        "денсаулық",
+                        "көше"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "молодость",
+                    "answer": "жастық шақ",
+                    "allChoices": [
+                        "жастық шақ",
+                        "денсаулық"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "К ИЛИ Қ",
+            "specification": [
+                "\n",
+                "Буква «Қ» пишется когда все гласные в слове твёрдые (а, ы, о, ұ)",
+                "\n",
+                "\n",
+                "буква «К» пишется когда все гласные в слове мягкие (ә, і, ө, и, е)",
+                "\n",
+                "\n",
+                "На заметку!",
+                "\n",
+                "Исключения:",
+                "қиын (трудно), қияр (огурец), қиял (фантазия)",
+                "\n",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": " ...ітап",
+                    "answer": "к",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...алам",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...ар",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...ыз",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...еремет",
+                    "answer": "к",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...оян",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...ауын",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...оңыз",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "...аңғыбас",
+                    "answer": "қ",
+                    "allChoices": [
+                        "к",
+                        "қ"
+                    ],
+                    "instructionText": "Выберите соответствующую букву к или қ"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "книга",
+                    "answer": "кітап",
+                    "allChoices": [
+                        "кітап",
+                        "дәптер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ручка",
+                    "answer": "қалам",
+                    "allChoices": [
+                        "кітап",
+                        "қалам"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "снег",
+                    "answer": "қар",
+                    "allChoices": [
+                        "қар",
+                        "аққала"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "девочка",
+                    "answer": "қыз",
+                    "allChoices": [
+                        "қыз",
+                        "бала"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "превосходно",
+                    "answer": "керемет",
+                    "allChoices": [
+                        "керемет",
+                        "жақсы"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "заяц",
+                    "answer": "қоян",
+                    "allChoices": [
+                        "қоян",
+                        "қауын"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "дыня",
+                    "answer": "қауын",
+                    "allChoices": [
+                        "күн",
+                        "қауын"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "жук",
+                    "answer": "қоңыз",
+                    "allChoices": [
+                        "қоңыз",
+                        "шаң"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "бродяга",
+                    "answer": "қаңғыбас",
+                    "allChoices": [
+                        "қаңғыбас",
+                        "көлеңке"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "А ИЛИ Ә",
+            "specification": [
+                "\n",
+                "\r",
+                "«А» – соответствует по произношению русскому звуку «А», употребляется в твердых словах.",
+                "\n",
+                "\r",
+                "«Ә» – специфический звук, широкий, негубной, парный твердому «А». При произношении звука ә кончик языка, прижат к нижним передним зубам, язык придвинут вперед, а средняя часть спинки языка незначительно приподнята к твердому небу.",
+                "\n",
+                "\r",
+                "Произношение примерно сходно с произношением русского я между двумя согласными, как в слове «мяч» или в конце слова «пламя».",
+                "\n",
+                "\r",
+                "На заметку!",
+                "\n",
+                "\r",
+                "Исключение составляют случай когда «А» произносится мягко (шәш, жәй, жәйлау, шәй), а пишется: шаш, жай, жайлау, шай.",
+                "\n",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Writing",
+                    "question": "Переведите на казахский: Отец, помогите",
+                    "answer": "Әке, көмектесіңіз"
+                },
+                {
+                    "questionType": "Writing",
+                    "question": "Переведите на казахский: Кайрат, принеси чай",
+                    "answer": "Қайрат, шай әкел"
+                },
+                {
+                    "questionType": "Writing",
+                    "question": "Переведите на казахский: Самат, не беспокойся",
+                    "answer": "Самат, уайымдама"
+                },
+                {
+                    "questionType": "Writing",
+                    "question": "Переведите на казахский: Немного отдохни",
+                    "answer": "Кішкене демал"
+                },
+                {
+                    "questionType": "Writing",
+                    "question": "Переведите на казахский: Дидар, подай тетрадь",
+                    "answer": "Дидар, дәптерді әпер"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "помогите",
+                    "answer": "көмектесіңіз",
+                    "allChoices": [
+                        "көмектесіңіз",
+                        "келіңіз"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "принеси",
+                    "answer": "әкел",
+                    "allChoices": [
+                        "әкел",
+                        "кел"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "не беспокойся",
+                    "answer": "уайымдама",
+                    "allChoices": [
+                        "уайымдама",
+                        "уайым"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "немного отдохни",
+                    "answer": "кішкене демал",
+                    "allChoices": [
+                        "уайымдама",
+                        "кішкене демал"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "подай тетрадь",
+                    "answer": "дәптерді әпер",
+                    "allChoices": [
+                        "дәптерді әпер",
+                        "әкел"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Ы ИЛИ І",
+            "specification": [
+                "\n",
+                "«Ы» - твердый гласный, «і» - мягкий гласный.",
+                "\n",
+                "\n",
+                "Оба звука произносятся бегло и не соответствуют русским звукам ы, и.",
+                "\n",
+                "\n",
+                "Ы, І  -призвуки, которые слышатся между двумя согласными в одном слоге и придают слову твердость (ы) или мягкость (і).",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Мен хат жаздым",
+                            "question": "Я написал письмо"
+                        },
+                        {
+                            "answer": "Шәкенге екі телеграмма бердім",
+                            "question": "Отдал Шакену две телеграммы"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Әне жерде алты бала ойнап отыр",
+                            "question": "Там играют шестеро детей"
+                        },
+                        {
+                            "answer": "Сырым шаруа қожалықта жұмыс істеп табыс табады",
+                            "question": "Сырым зарабатывает, работая в крестьянском хозяйстве"
+                        },
+                        {
+                            "answer": "Шаруалар жер жыртады, егін егеді, өнімін жинайды",
+                            "question": "Крестьяне пашут землю, сеют семена и собирают урожай"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Сәния бірінші кезекте",
+                            "question": "Сания первая в очереди"
+                        },
+                        {
+                            "answer": "Ауыл алыс емес, бізден жеті километр жерде",
+                            "question": "Ауыл недалеко, семь километров от нас"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "тайна",
+                    "answer": "сыр",
+                    "allChoices": [
+                        "сыр",
+                        "көңіл"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "певец",
+                    "answer": "әнші",
+                    "allChoices": [
+                        "әнші",
+                        "биші"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "книга",
+                    "answer": "кітап",
+                    "allChoices": [
+                        "кітап",
+                        "дәптер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "сапожник",
+                    "answer": "етікші",
+                    "allChoices": [
+                        "етікші",
+                        "суретші"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "обрыв",
+                    "answer": "жыра",
+                    "allChoices": [
+                        "жыра",
+                        "жазықтық"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "змея",
+                    "answer": "жылан",
+                    "allChoices": [
+                        "жылан",
+                        "кесіртке"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "это (эта, это,этот)",
+                    "answer": "мынау",
+                    "allChoices": [
+                        "мынау",
+                        "осы"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Ө ИЛИ О",
+            "specification": [
+                "\n",
+                "\r",
+                "«О» - всегда произносится как русское ударное о. Например: Ораз (не Араз или Ураз), отан (не атан или утан), боран (не баран или буран). «О» - употребляется в твердых словах и всегда произносится во всех слогах слова как О.",
+                "\n",
+                "\n",
+                "\r",
+                "«Ө» - специфический широкий, губной, мягкий гласный, парный твердому - о. По произношению он несколько приближается к произнесению звука среднего между О и звуком, обозначенным на письме буквой Ё.",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Қазақстанда өзен көп",
+                            "question": "В Казахстане много рек"
+                        },
+                        {
+                            "answer": "Соның бірі Іле өзені",
+                            "question": "Одной из них является река Или"
+                        },
+                        {
+                            "answer": "Ол қаладан алыс емес",
+                            "question": "Она недалеко от города"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Сонан соң суға шомылдық",
+                            "question": "Потом купались"
+                        },
+                        {
+                            "answer": "Кешке қалаға келдік",
+                            "question": "Вечером приехали в город"
+                        },
+                        {
+                            "answer": "Көп балық әкелдік",
+                            "question": "Привезли много рыбы"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Біз кеше Іле өзеніне бардық",
+                            "question": "Мы вчера ездили на реку Или"
+                        },
+                        {
+                            "answer": "Балық ауладық",
+                            "question": "Ловили рыбу"
+                        },
+                        {
+                            "answer": "Күн өте ыстық болды",
+                            "question": "Погода была очень жаркой"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ловить рыбу",
+                    "answer": "балық аулау",
+                    "allChoices": [
+                        "балық аулау",
+                        "балықты көру"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "жизнь",
+                    "answer": "өмір",
+                    "allChoices": [
+                        "өмір",
+                        "жастық шақ"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "река",
+                    "answer": "өзен",
+                    "allChoices": [
+                        "көл",
+                        "өзен"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "пришли",
+                    "answer": "келдік",
+                    "allChoices": [
+                        "келдік",
+                        "кеттік"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "искусство",
+                    "answer": "өнер",
+                    "allChoices": [
+                        "өнер",
+                        "шебер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "вечером",
+                    "answer": "кешке",
+                    "allChoices": [
+                        "кешке",
+                        "таңертең"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "узор",
+                    "answer": "өрнек",
+                    "allChoices": [
+                        "өрнек",
+                        "өткір"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "глаза",
+                    "answer": "көз",
+                    "allChoices": [
+                        "көз",
+                        "қол"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "острый",
+                    "answer": "өткір",
+                    "allChoices": [
+                        "өткір",
+                        "өткел"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "много",
+                    "answer": "көп",
+                    "allChoices": [
+                        "көп",
+                        "көл"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "купались",
+                    "answer": "шомылдық",
+                    "allChoices": [
+                        "шомылдық",
+                        "жүгірдік"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Ұ ИЛИ Ү",
+            "specification": [
+                "\n",
+                "\r",
+                "«Ұ» - специфический твердый, узкий, губной гласный звук. Он произносится кратко, как нечто среднее между ой».",
+                "\n",
+                "\n",
+                "\r",
+                "«Ү» - специфический, мягкий, узкий, губной гласный звук.",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Ұста қолдан үстел жасады",
+                            "question": "Мастер сделал стол своими руками"
+                        },
+                        {
+                            "answer": "Үстелдің бетінде оюдан жасалған өрнек бар",
+                            "question": "На поверхности стола нанесен орнамент"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Үстел тым биік емес",
+                            "question": "Стол не слишком высокий"
+                        },
+                        {
+                            "answer": "Ұста үстелдің беріктігін тексерді",
+                            "question": "Мастер проверил прочность стола"
+                        },
+                        {
+                            "answer": "Ұлын жанына шақырып оған үстел бетіндегі өрнектерді бояуды тапсырды",
+                            "question": "Пригласив сына к себе, он поручил раскрасить узоры орнамента на поверхности стола"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "мастер",
+                    "answer": "ұста",
+                    "allChoices": [
+                        "ұста",
+                        "балықшы"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "стол",
+                    "answer": "үстел",
+                    "allChoices": [
+                        "үстел",
+                        "орындық"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "стулья",
+                    "answer": "орындық",
+                    "allChoices": [
+                        "үстел",
+                        "орындық"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "орнамент",
+                    "answer": "ою",
+                    "allChoices": [
+                        "ою",
+                        "өрнек"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "узор",
+                    "answer": "өрнек",
+                    "allChoices": [
+                        "ою",
+                        "өрнек"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "прочность",
+                    "answer": "беріктік",
+                    "allChoices": [
+                        "беріктік",
+                        "серпімділік"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "раскраска",
+                    "answer": "бояу",
+                    "allChoices": [
+                        "қарындаш",
+                        "бояу"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "title": "Ғ ИЛИ Г",
+            "specification": [
+                "\n",
+                "\r",
+                "«Г» - не поется, не тянется, преграда во рту есть, согласный, твердый, звонкий",
+                "\n",
+                "\n",
+                "\r",
+                "«Ғ» - заднеязычный, шелевой, звонкий звук, образуется путем приближения задней части языка к заднему небу, но без полного соприкосновения. Употребляется в начале и в середине слов",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Юрий Гагарин – әлемнің тұңғыш ғарышкері",
+                            "question": "Юрий Гагарин – первый космонавт мира"
+                        },
+                        {
+                            "answer": "Білімге аса көңіл бөлу керек",
+                            "question": "Знаниям следует уделить особое внимание"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Асан Әсемге гүл сыйлады",
+                            "question": "Асан подарил Асем цветы"
+                        },
+                        {
+                            "answer": "Біз жазда көлге барып шомылдық",
+                            "question": "Мы летом ходили на озеро и купались"
+                        },
+                        {
+                            "answer": "Сағат қанша болғанын айтып жібересіз бе?",
+                            "question": "Не подскажете, который сейчас час?"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "часы",
+                    "answer": "сағат",
+                    "allChoices": [
+                        "сағат",
+                        "уақыт"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "берег",
+                    "answer": "жаға",
+                    "allChoices": [
+                        "көлдің беті",
+                        "жаға"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ученый",
+                    "answer": "ғалым",
+                    "allChoices": [
+                        "ғалым",
+                        "оқытушы"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "бумага",
+                    "answer": "қағаз",
+                    "allChoices": [
+                        "қағаз",
+                        "дәптер"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "дерево",
+                    "answer": "ағаш",
+                    "allChoices": [
+                        "ағаш",
+                        "темір"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "старший брат",
+                    "answer": "аға",
+                    "allChoices": [
+                        "аға",
+                        "іні"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "воробей",
+                    "answer": "торғай",
+                    "allChoices": [
+                        "торғай",
+                        "бұлбұл"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "молоток",
+                    "answer": "балға",
+                    "allChoices": [
+                        "балға",
+                        "шеге"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "цветок",
+                    "answer": "гүл",
+                    "allChoices": [
+                        "гүл",
+                        "шөп"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Алып бар (апар), алып кел (әкел)",
+            "specification": [
+                "\n",
+                "Сокращенная форма словосочетания «алып бар» будет «апар»",
+                "\n",
+                "Сокращенная форма словосочетания «алып кел» будет «әкел»",
+                "\n",
+                "апар - отнеси",
+                "\n",
+                "әкел - принеси",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Өтінем, ыдыстарды үстелге апарыңыз",
+                            "question": "Отнесите пожалуйста посуду на стол"
+                        },
+                        {
+                            "answer": "Сіз маған бір кесе шай әкелесіз бе?",
+                            "question": "Вы могли бы принести мне чашку чая?"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                },
+                {
+                    "questionType": "Matching",
+                    "questionAnswerPairs": [
+                        {
+                            "answer": "Қорапты орнына апару қажет",
+                            "question": "Необходимо отнести коробку на место"
+                        },
+                        {
+                            "answer": "Мен дүкеннен азық-түлік сатып алып, үйге әкелгім келеді",
+                            "question": "Я хочу купить в магазине продукты и принести домой"
+                        },
+                        {
+                            "answer": "Сәкен құжаттарды өз басшысына апарды",
+                            "question": "Сакен отнес документы своему руководителю?"
+                        }
+                    ],
+                    "instructionText": "Выберите правильный вариант"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "посуда",
+                    "answer": "ыдыс",
+                    "allChoices": [
+                        "құжат",
+                        "ыдыс"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "чашка чая",
+                    "answer": "бір кесе шай",
+                    "allChoices": [
+                        "бір кесе шай",
+                        "бір ыдыс"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "коробка",
+                    "answer": "қорап",
+                    "allChoices": [
+                        "қорап",
+                        "құжат"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "документ",
+                    "answer": "құжат",
+                    "allChoices": [
+                        "кесе",
+                        "құжат"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "руководитель",
+                    "answer": "басшы",
+                    "allChoices": [
+                        "басшы",
+                        "жұмысшы"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "БАСТАУЫШ + БАЯНДАУЫШ",
+            "specification": [
+                "\n",
+                "Бастауыш (подлежащее) отвечает на вопросы  кім? (кто?) не? (что?)",
+                "\n",
+                "Баяндауыш (сказуемое) отвечает на вопросы  не істеп жатыр? (что делает?) не істейді? (что сделает?)",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен келдім (Я пришел)",
+                    "answer": "Мен",
+                    "allChoices": [
+                        "Мен",
+                        "келдім"
+                    ],
+                    "instructionText": "Найдите подлежащее"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Айдос жүгірді (Айдос побежал)",
+                    "answer": "жүгірді",
+                    "allChoices": [
+                        "Айдос",
+                        "жүгірді"
+                    ],
+                    "instructionText": "Найдите сказуемое"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ол отыр (Он сидит)",
+                    "answer": "отыр",
+                    "allChoices": [
+                        "Ол",
+                        "отыр"
+                    ],
+                    "instructionText": "Найдите сказуемое"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Біз барамыз (Мы идем)",
+                    "answer": "Біз",
+                    "allChoices": [
+                        "Біз",
+                        "барамыз"
+                    ],
+                    "instructionText": "Найдите подлежащее"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Олар келеді (Они придут)",
+                    "answer": "келеді",
+                    "allChoices": [
+                        "Олар",
+                        "келеді"
+                    ],
+                    "instructionText": "Найдите сказуемое"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Сендер ойнаңдар (Вы играйте)",
+                    "answer": "Сендер",
+                    "allChoices": [
+                        "Сендер",
+                        "ойнаңдар"
+                    ],
+                    "instructionText": "Найдите подлежащее"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Балалар күлді (Дети смеялись)",
+                    "answer": "күлді",
+                    "allChoices": [
+                        "Балалар",
+                        "күлді"
+                    ],
+                    "instructionText": "Найдите сказуемое"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Сурет салынды (Рисунок нарисован)",
+                    "answer": "салынды",
+                    "allChoices": [
+                        "Сурет",
+                        "салынды"
+                    ],
+                    "instructionText": "Найдите сказуемое"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "автомобиль",
+                    "answer": "автокөлік",
+                    "allChoices": [
+                        "автокөлік",
+                        "автожол"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "прыгать",
+                    "answer": "секіру",
+                    "allChoices": [
+                        "секіру",
+                        "құлау"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "смеяться",
+                    "answer": "күлу",
+                    "allChoices": [
+                        "күлу",
+                        "жылау"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "взлететь",
+                    "answer": "ұшу",
+                    "allChoices": [
+                        "ұшу",
+                        "қону"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "плакать",
+                    "answer": "жылау",
+                    "allChoices": [
+                        "жылау",
+                        "күлу"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "title": "АНЫҚТАУЫШ",
+            "specification": [
+                "\n",
+                "Анықтауыш (определение) отвечает на вопросы  қандай? (какой?), қай? (какое?), кімнің (чья?), ненің (чего?), қанша? (сколько?)",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ол - ұзын бойлы адам (Он высокий человек)",
+                    "answer": "ұзын бойлы",
+                    "allChoices": [
+                        "ұзын бойлы",
+                        "адам"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Айдос үлкен бала (Айдос большой мальчик)",
+                    "answer": "үлкен",
+                    "allChoices": [
+                        "үлкен",
+                        "бала"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ерте күз есіме түсіп отыр (Вспоминается мне ранняя осень)",
+                    "answer": "Ерте",
+                    "allChoices": [
+                        "Ерте",
+                        "есіме"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Желден қашқан бұлттар жылдам батысқа қарай көшті (Гонимые ветром облака быстро неслись на запад)",
+                    "answer": "Желден қашқан",
+                    "allChoices": [
+                        "батысқа қарай",
+                        "Желден қашқан"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ол оныншы сыныпта оқиды (Он учится в десятом классе)",
+                    "answer": "оныншы",
+                    "allChoices": [
+                        "оныншы",
+                        "сыныпта"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен сенің қара пальтоңды киіп алсам болады ма? (Можно я надену твое черное пальто?)",
+                    "answer": "қара",
+                    "allChoices": [
+                        "қара",
+                        "пальтоңды"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Қайыңның жапырақтары қозғалмастан ілініп тұр (Листва березы висит не шелохнувшись)",
+                    "answer": " Қайыңның ",
+                    "allChoices": [
+                        "Қайыңның",
+                        "жапырақтары"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Жол жиегінде биіктігі адамның бойындай бұта өсті (На обочине рос куст высотой с человека)",
+                    "answer": "адамның бойындай",
+                    "allChoices": [
+                        "адамның бойындай",
+                        "Жол жиегінде"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Шатырдың баспалдағы өте тік болды (Чердачная лестница была очень крутая)",
+                    "answer": "Шатырдың",
+                    "allChoices": [
+                        "Шатырдың",
+                        "баспалдағы"
+                    ],
+                    "instructionText": "Найдите определение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Гагарин – бірінші ғарышкер (Гагарин – первый космонавт)",
+                    "answer": "бірінші",
+                    "allChoices": [
+                        "бірінші",
+                        "ғарышкер"
+                    ],
+                    "instructionText": "Найдите определение"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "длинный",
+                    "answer": "ұзын",
+                    "allChoices": [
+                        "ұзын",
+                        "қысқа"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "высокий",
+                    "answer": "биік",
+                    "allChoices": [
+                        "биік",
+                        "аласа"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "рано",
+                    "answer": "ерте",
+                    "allChoices": [
+                        "ерте",
+                        "кеш"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "ветер",
+                    "answer": "жел",
+                    "allChoices": [
+                        "жел",
+                        "жаңбыр"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "береза",
+                    "answer": "қайың",
+                    "allChoices": [
+                        "қайың",
+                        "терек"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "обочина",
+                    "answer": "жол жиегі",
+                    "allChoices": [
+                        "жол жиегі",
+                        "жол бойы"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "title": "ТОЛЫҚТАУЫШ",
+            "specification": [
+                "\n",
+                "Толықтауыш (дополнение) отвечает на вопросы кімді? (кого?), нені? (чего?), кімге (кому?), неге (чему?), не? (что?), кіммен? (кем?), немен (чем?), кім туралы? (о ком?), не туралы (о чем?)",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен шай ішіп отырмын (Я пью чай)",
+                    "answer": "шай",
+                    "allChoices": [
+                        "шай",
+                        "Мен"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Суретші сурет салып отыр (Художник рисует картину)",
+                    "answer": "сурет",
+                    "allChoices": [
+                        "сурет",
+                        "салып отыр"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен досымды кездестірдім (Я встретил друга)",
+                    "answer": "досымды",
+                    "allChoices": [
+                        "досымды",
+                        "Мен"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Олар саятсат жайлы талқылап отыр (Они обсуждают о политике)",
+                    "answer": "саятсат жайлы",
+                    "allChoices": [
+                        "саятсат жайлы",
+                        "талқылап отыр"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Біз спортпен шұғылданамыз (Мы занимаемся спортом)",
+                    "answer": "спортпен",
+                    "allChoices": [
+                        "спортпен",
+                        "Біз"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ертең бүгінге ұқсамайтын болады (Завтра не будет похоже на сегодня)",
+                    "answer": "бүгінге",
+                    "allChoices": [
+                        "бүгінге",
+                        "ертең"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Барлығы оның өлең айтуын сұрады (Все просили его спеть)",
+                    "answer": "өлең айтуын",
+                    "allChoices": [
+                        "өлең айтуын",
+                        "айтуын сұрады"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Маған кітап оқыған қатты ұнайды (Мне очень нравиться читать книги)",
+                    "answer": "Маған",
+                    "allChoices": [
+                        "Маған",
+                        "кітап"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Қара бұлттар күнді жауып тастады (Черные облака закрыли солнце)",
+                    "answer": "күнді",
+                    "allChoices": [
+                        "күнді",
+                        "бұлттар"
+                    ],
+                    "instructionText": "Найдите дополнение"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "политика",
+                    "answer": "саясат",
+                    "allChoices": [
+                        "саясат",
+                        "жаңалық"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "сегодня",
+                    "answer": "бүгін",
+                    "allChoices": [
+                        "бүгін",
+                        "ертең"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "завтра",
+                    "answer": "ертең",
+                    "allChoices": [
+                        "ертең",
+                        "кеше"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "петь песню",
+                    "answer": "өлең айту",
+                    "allChoices": [
+                        "өлең айту",
+                        "домбра тарту"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "жизнь",
+                    "answer": "өмір",
+                    "allChoices": [
+                        "өмір",
+                        "тағдыр"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "судьба",
+                    "answer": "тағдыр",
+                    "allChoices": [
+                        "өмір",
+                        "тағдыр"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "облака",
+                    "answer": "бұлттар",
+                    "allChoices": [
+                        "бұлттар",
+                        "жаңбыр"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "title": "ПЫСЫҚТАУЫШ",
+            "specification": [
+                "\n",
+                "Пысықтауыш (обстоятельство) отвечает на вопросы қалай? (как?), қайда  (куда?), қашан (когда?), не себепті? (почему?)",
+                "\n"
+            ],
+            "data": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Қар баяу түсіп жатыр (Снег падает медленно)",
+                    "answer": "баяу",
+                    "allChoices": [
+                        "баяу",
+                        "Қар"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен сыпайылықтан үндемедім (Я промолчал из вежливости)",
+                    "answer": "сыпайылықтан",
+                    "allChoices": [
+                        "сыпайылықтан",
+                        "үндемедім"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ол қуанғаннан секірді (Он запрыгал от радости)",
+                    "answer": "қуанғаннан",
+                    "allChoices": [
+                        "қуанғаннан",
+                        "секірді"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен ерте тұрдым (Я встал рано)",
+                    "answer": "ерте",
+                    "allChoices": [
+                        "ерте",
+                        "Мен"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Ол ауылға бара жатыр (Он уезжает в деревню)",
+                    "answer": "ауылға",
+                    "allChoices": [
+                        "ауылға",
+                        "бара жатыр"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Айдос қажет болған жағдайда хабарласуды сұрады (Айдос просил известить в случае необходимости)",
+                    "answer": "қажет болған жағдайда",
+                    "allChoices": [
+                        "қажет болған жағдайда",
+                        "хабарласуды сұрады"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Олар шаршағандарына қарамастан ары қарай жүруді ұйғарды (Они, несмотря на усталость, решили идти дальше)",
+                    "answer": "шаршағандарына қарамастан",
+                    "allChoices": [
+                        "шаршағандарына қарамастан",
+                        "ары қарай жүруді"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Мен досымның жағдайын сұрауға бардым (Я пошел проведать друга)",
+                    "answer": "жағдайын сұрауға",
+                    "allChoices": [
+                        "жағдайын сұрауға",
+                        "сұрауға бардым"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "Қоян орманнан атып шықты (Заяц выскочил из леса)",
+                    "answer": "орманнан",
+                    "allChoices": [
+                        "орманнан",
+                        "атып шықты"
+                    ],
+                    "instructionText": "Найдите обстоятельство"
+                }
+            ],
+            "words": [
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "медленно",
+                    "answer": "баяу",
+                    "allChoices": [
+                        "баяу",
+                        "жылдам"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "вежливость",
+                    "answer": "сыпайылық",
+                    "allChoices": [
+                        "сыпайылық",
+                        "мейірімділік"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "быстрый",
+                    "answer": "жылдам",
+                    "allChoices": [
+                        "баяу",
+                        "жылдам"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "радоваться",
+                    "answer": "қуану",
+                    "allChoices": [
+                        "қуану",
+                        "өкіну"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "лес",
+                    "answer": "орман",
+                    "allChoices": [
+                        "орман",
+                        "бақша"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "желеть",
+                    "answer": "өкіну",
+                    "allChoices": [
+                        "қуану",
+                        "өкіну"
+                    ]
+                },
+                {
+                    "questionType": "MultipleChoice",
+                    "question": "усталость",
+                    "answer": "шаршау",
+                    "allChoices": [
+                        "шаршау",
+                        "демалу"
+                    ]
+                }
+            ]
+        }
+    ]
+}

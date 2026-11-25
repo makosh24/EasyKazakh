@@ -2,24 +2,16 @@ import React from 'react';
 import {
   View,
   Text,
-  ImageBackground,
   StyleSheet,
   FlatList,
   ActivityIndicator,
   TouchableOpacity,
-  Dimensions,
+  SafeAreaView,
 } from 'react-native';
-
-// InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL);
-
-// RewardedAd.createForAdRequest(TestIds.REWARDED);
 
 import FilterModal from './FilterModal';
 import Ad from './Ad';
-import {images} from '../constants';
-
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
+import {colors, shadow} from '../constants/theme';
 
 const Home = ({navigation, route}) => {
   const [isLoading, setLoading] = React.useState(true);
@@ -32,8 +24,7 @@ const Home = ({navigation, route}) => {
   const getMovies = async () => {
     try {
       const response = require('./data.json');
-      const json = response;
-      setData(json.movies);
+      setData(response.movies);
     } catch (error) {
       console.error(error);
     } finally {
@@ -45,113 +36,148 @@ const Home = ({navigation, route}) => {
     getMovies();
   }, []);
 
-  return (
-    <View style={styles.container}>
-      <ImageBackground
-        source={images.backgroundImage}
-        resizeMode="cover"
-        style={styles.image}>
-        {/* AD */}
-        {ad && (
-           <Ad
-           isVisible={ad}
-           onClose={() => setAd(false)}
-           navigation={navigation}
-           route={route}
-           data={quiz}
-           specification={specification}
-         />
-        )}
-        {/* Filter */}
-        {showFilterModal && (
-          <FilterModal
-            isVisible={showFilterModal}
-            onClose={() => setShowFilterModal(false)}
-            navigation={navigation}
-            route={route}
-            data={quiz}
-            specification={specification}
-          />
-        )}
-        {/* <BannerAd unitId={TestIds.BANNER} /> */}
-        <Text
-          style={{
-            alignSelf: 'center',
-            fontSize: 40,
-            color: 'darkred',
-            marginTop: 100,
-            fontWeight: 'bold',
-          }}>
-          {'\r\r\r'}"EASY" {'\n'}казахский
-        </Text>
-        {isLoading ? (
-          <ActivityIndicator
-            size="large"
-            color="#00ff00"
-            style={{marginTop: 200}}
-          />
-        ) : (
-          <FlatList
-            horizontal
-            data={data}
-            keyExtractor={item => `${item.id}`}
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{
-              marginTop: 30,
-              marginBottom: 20,
-            }}
-            renderItem={({item, index}) => (
-              <TouchableOpacity
-                style={{
-                  marginLeft: 20,
-                  marginRight: index == data.length - 1 ? 20 : 0,
-                  borderWidth: 5,
-                  alignSelf: 'flex-end',
-                  borderRadius: (windowWidth * 0.8) / 2,
-                  borderColor: '#7fff00',
-                  width: windowWidth * 0.8,
-                  height: windowWidth * 0.75,
-                  backgroundColor: '#ffd700',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  marginBottom: 50,
-                }}
-                onPress={() => {
-                  // free
-                  // if(item.id < 4) {
-                  //   setShowFilterModal(!showFilterModal),
-                  //   setQuiz(item),
-                  //   setSpecification(item.specification);
-                  // } else {
-                  //   setAd(true);
-                  // }
+  const openLesson = item => {
+    setShowFilterModal(true);
+    setQuiz(item);
+    setSpecification(item.specification);
+  };
 
-                  // cheap
-                  setShowFilterModal(!showFilterModal),
-                  setQuiz(item),
-                  setSpecification(item.specification);
-                }}>
-                <Text style={{fontSize: 25, fontWeight: '700', margin: 7}}>
-                  {item.title}
+  return (
+    <SafeAreaView style={styles.screen}>
+      {ad && (
+        <Ad
+          isVisible={ad}
+          onClose={() => setAd(false)}
+          navigation={navigation}
+          route={route}
+          data={quiz}
+          specification={specification}
+        />
+      )}
+      {showFilterModal && (
+        <FilterModal
+          isVisible={showFilterModal}
+          onClose={() => setShowFilterModal(false)}
+          navigation={navigation}
+          route={route}
+          data={quiz}
+          specification={specification}
+        />
+      )}
+      <View style={styles.header}>
+        <Text style={styles.kicker}>EASY</Text>
+        <Text style={styles.title}>Қазақша</Text>
+        <Text style={styles.subtitle}>
+          Уроки произношения и грамматики
+        </Text>
+      </View>
+      {isLoading ? (
+        <ActivityIndicator
+          size="large"
+          color={colors.accent}
+          style={styles.loader}
+        />
+      ) : (
+        <FlatList
+          data={data}
+          keyExtractor={item => `${item.id}`}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.list}
+          renderItem={({item, index}) => (
+            <TouchableOpacity
+              style={styles.card}
+              activeOpacity={0.85}
+              onPress={() => openLesson(item)}>
+              <View style={styles.badge}>
+                <Text style={styles.badgeText}>{index + 1}</Text>
+              </View>
+              <View style={styles.cardBody}>
+                <Text style={styles.cardTitle}>{item.title}</Text>
+                <Text style={styles.cardHint}>
+                  Тренажёр, слова и правила
                 </Text>
-                <Text>{item.releaseYear}</Text>
-              </TouchableOpacity>
-            )}
-          />
-        )}
-      </ImageBackground>
-    </View>
+              </View>
+            </TouchableOpacity>
+          )}
+        />
+      )}
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
+    flex: 1,
+    backgroundColor: colors.background,
+  },
+  header: {
+    paddingHorizontal: 24,
+    paddingTop: 12,
+    paddingBottom: 8,
+  },
+  kicker: {
+    color: colors.gold,
+    fontSize: 13,
+    fontWeight: '700',
+    letterSpacing: 2,
+  },
+  title: {
+    color: colors.ink,
+    fontSize: 36,
+    fontWeight: '700',
+    marginTop: 4,
+  },
+  subtitle: {
+    color: colors.muted,
+    fontSize: 16,
+    lineHeight: 24,
+    marginTop: 6,
+  },
+  loader: {
+    marginTop: 48,
+  },
+  list: {
+    paddingHorizontal: 20,
+    paddingTop: 12,
+    paddingBottom: 28,
+  },
+  card: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: colors.card,
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 12,
+    ...shadow,
+  },
+  badge: {
+    width: 44,
+    height: 44,
+    borderRadius: 14,
+    backgroundColor: '#E6F6FA',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 14,
+  },
+  badgeText: {
+    color: colors.accent,
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  cardBody: {
     flex: 1,
   },
-  image: {
-    flex: 1,
-    width: windowWidth,
-    height: windowHeight,
+  cardTitle: {
+    color: colors.ink,
+    fontSize: 17,
+    fontWeight: '700',
+    lineHeight: 22,
+  },
+  cardHint: {
+    color: colors.muted,
+    fontSize: 14,
+    lineHeight: 20,
+    marginTop: 4,
   },
 });
 

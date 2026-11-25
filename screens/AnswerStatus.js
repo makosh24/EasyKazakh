@@ -1,73 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
-// import { Font } from 'expo';
+import {View, Text, StyleSheet} from 'react-native';
 import LottieView from 'lottie-react-native';
-import { scale, moderateScale, verticalScale} from '../Scaling';
+import {scale, moderateScale} from '../Scaling';
+import {colors} from '../constants/theme';
 
-const STATUS_FONT = require('../assets/fonts/BadaboomBB_Reg.ttf');
 const CORRECT_ANIMATION = require('../assets/animations/433-checked-done.json');
 const INCORRECT_ANIMATION = require('../assets/animations/101-x-pop.json');
 const TIMEOUT_ANIMATION = require('../assets/animations/4284-notification.json');
 
-
-/**
- * This object is used for type checking the props of the component.
- */
 const propTypes = {
   type: PropTypes.oneOf(['correct', 'incorrect', 'timeout']).isRequired,
 };
 
-
-// /**
-//  * @description	Show the correct animation for answer status based on type.
-//  * @constructor
-//  * @param {Object} props - The props that were defined by the caller of this component.
-//  * @param {string} props.type - Type of the status answer (correct, incorrect or timeout).
-// */
 class AnswerStatus extends React.Component {
-
-  constructor(props){
-		super(props);
-		// /**
-		//  * @typedef {Object} ComponentState
-		//  * @property {Object[]} fontLoaded - Indicates whether custom fonts already loaded.
-		//  */
-
-		// /** @type {ComponentState} */
-		// this.state = {
-		// 	fontLoaded: false
-		// };
-  }
-
-  // async componentDidMount() {
-  //   await Font.loadAsync({
-  //     'status-text': STATUS_FONT,
-  //   });
-  //   this.setState({ fontLoaded: true });
-  // }
-
   render() {
     let animation;
     let statusMessage;
     let statusStyle;
-    switch(this.props.type) {
+    switch (this.props.type) {
       case 'correct':
         animation = CORRECT_ANIMATION;
-        statusMessage = 'Correct!!!';
+        statusMessage = 'Верно';
         statusStyle = styles.correctText;
         break;
       case 'incorrect':
         animation = INCORRECT_ANIMATION;
-        statusMessage = 'Incorrect!!!';
+        statusMessage = 'Неверно';
         statusStyle = styles.errorText;
         break;
       default:
-        statusMessage = 'Time over!!!';
+        statusMessage = 'Время вышло';
         statusStyle = styles.timeoutText;
         animation = TIMEOUT_ANIMATION;
     }
@@ -75,56 +38,50 @@ class AnswerStatus extends React.Component {
     return (
       <View style={styles.statusContainer}>
         <LottieView
-            style={styles.statusAnimation}
-            source={animation}
-            autoPlay={true}
-            loop={false}
+          style={styles.statusAnimation}
+          source={animation}
+          autoPlay
+          loop={false}
         />
         <Text style={[styles.statusText, statusStyle]}>{statusMessage}</Text>
+        <Text style={styles.tapHint}>Нажмите, чтобы продолжить</Text>
       </View>
     );
-  }  
+  }
 }
 
-/**
- * AnswerStatus component StyleSheet.
- */
 const styles = StyleSheet.create({
   statusContainer: {
     flex: 1,
-    height: '100%',
-    width: '100%',
-    paddingTop: 0,
-    borderWidth: 2,
-    borderRadius: 8,
-    borderColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    backgroundColor: 'rgba(246, 243, 236, 0.96)',
   },
   statusAnimation: {
-    width: scale(300),
-    height: scale(300)
+    width: scale(220),
+    height: scale(220),
   },
   statusText: {
-    fontFamily: "status-text",
-    fontSize: moderateScale(40),
-    textShadowRadius: 10,
-    marginTop: moderateScale(-60)
+    fontSize: moderateScale(32),
+    fontWeight: '700',
+    marginTop: moderateScale(-24),
+  },
+  tapHint: {
+    marginTop: 8,
+    color: colors.muted,
+    fontSize: 15,
   },
   correctText: {
-    color: '#00C871'
+    color: colors.correct,
   },
   errorText: {
-    color: '#FF1122'
+    color: colors.incorrect,
   },
   timeoutText: {
-    color: '#FFAA38'
+    color: colors.timeout,
   },
 });
 
-// Type checking the props of the component
 AnswerStatus.propTypes = propTypes;
 
 export default AnswerStatus;

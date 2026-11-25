@@ -7,9 +7,8 @@ import {
   Dimensions,
   ScrollView,
   TouchableOpacity,
-  ImageBackground
 } from 'react-native';
-import {images} from '../../constants';
+import {colors, shadow} from '../theme';
 // import Icon from 'react-native-vector-icons/Ionicons';
 import Animbutton from './AnimButton';
 const {width, height} = Dimensions.get('window');
@@ -144,50 +143,27 @@ export default class QuizTest extends Component {
     });
 
     return (
-      <ImageBackground
-        source={images.backgroundImage}
-        resizeMode="cover"
-        style={styles.image}>
-        <ScrollView style={{ paddingTop: 10}}>
-          <View style={styles.container}>
-            <View
-              style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}>
-              <View style={styles.oval}>
-                <Text style={styles.welcome}>{this.state.question}</Text>
-              </View>
-              <View>{options}</View>
-              <View style={{flexDirection: 'row'}}>
-                {/* <Button
-                  onPress={() => this.prev()}
-                  title="Prev"
-                  color="#841584"
-                />
-                <View style={{margin: 15}} /> */}
-
-                <TouchableOpacity onPress={() => this.next()}>
-                  <View
-                    style={{
-                      paddingTop: 5,
-                      paddingBottom: 5,
-                      paddingRight: 20,
-                      paddingLeft: 20,
-                      borderRadius: 10,
-                      backgroundColor: 'green',
-                    }}>
-                    <Text>Madi</Text>
-                    {/* <Icon name="md-arrow-round-forward" size={30} color="white" /> */}
-                  </View>
-                </TouchableOpacity>
-              </View>
+      <ScrollView style={styles.image} contentContainerStyle={{paddingTop: 10, paddingBottom: 24}}>
+        <View style={styles.container}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}>
+            <View style={styles.oval}>
+              <Text style={styles.welcome}>{this.state.question}</Text>
             </View>
+            <View>{options}</View>
+            <TouchableOpacity onPress={() => this.next()}>
+              <View style={styles.nextButton}>
+                <Text style={styles.nextLabel}>Дальше</Text>
+              </View>
+            </TouchableOpacity>
           </View>
-        </ScrollView>
-      </ImageBackground>
+        </View>
+      </ScrollView>
     );
   }
 }
@@ -195,17 +171,32 @@ export default class QuizTest extends Component {
 const styles = StyleSheet.create({
   oval: {
     width: (width * 90) / 100,
-    borderRadius: 20,
-    backgroundColor: 'green',
+    borderRadius: 16,
+    backgroundColor: colors.card,
+    ...shadow,
+  },
+  nextButton: {
+    marginTop: 8,
+    paddingVertical: 14,
+    paddingHorizontal: 28,
+    borderRadius: 14,
+    backgroundColor: colors.accent,
+  },
+  nextLabel: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '700',
   },
   container: {
     flex: 1,
     alignItems: 'center',
   },
   welcome: {
-    fontSize: 20,
-    margin: 15,
-    color: 'white',
+    fontSize: 18,
+    lineHeight: 26,
+    margin: 16,
+    color: colors.ink,
+    fontWeight: '600',
   },
   instructions: {
     textAlign: 'center',

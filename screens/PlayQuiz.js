@@ -1,17 +1,8 @@
 import React, {Component} from 'react';
 import QuizTest from '../constants/components/QuizTest';
-import {
-  StyleSheet,
-  StatusBar,
-  TouchableOpacity,
-  View,
-  Text,
-  ImageBackground,
-  Image,
-} from 'react-native';
-import {images, icons} from '../constants';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import {StyleSheet, TouchableOpacity, View, Text, SafeAreaView} from 'react-native';
 import {connect} from 'react-redux';
+import {colors, shadow} from '../constants/theme';
 
 class Playquiz extends Component {
   constructor(props) {
@@ -29,129 +20,120 @@ class Playquiz extends Component {
     this.setState({quizFinish: true, score: score});
   }
   _scoreMessage(score) {
-    if (score <= 30) {
-      return (
-        <View style={styles.innerContainer}>
-          <View style={{flexDirection: 'row'}}>
-            {/* <Icon name="trophy" size={30} color="white" /> */}
-            <Text>MAdi</Text>
-          </View>
-          <Text style={styles.score}>You need to work hard</Text>
-          <Text style={styles.score}>You scored {score}%</Text>
-        </View>
-      );
-    } else if (score > 30 && score < 60) {
-      return (
-        <View style={styles.innerContainer}>
-          <View style={{flexDirection: 'row'}}>
-            <Icon name="trophy" size={30} color="white" />
-            <Icon name="trophy" size={30} color="white" />
-          </View>
-          <Text style={styles.score}>You are good</Text>
-          <Text style={styles.score}>Congrats you scored {score}% </Text>
-        </View>
-      );
+    let title = 'Нужно ещё потренироваться';
+    let tone = styles.low;
+    if (score > 30 && score < 60) {
+      title = 'Хороший результат';
+      tone = styles.mid;
     } else if (score >= 60) {
-      return (
-        <View style={styles.innerContainer}>
-          <View style={{flexDirection: 'row'}}>
-            <Icon name="trophy" size={30} color="white" />
-            <Icon name="trophy" size={30} color="white" />
-            <Icon name="trophy" size={30} color="white" />
-          </View>
-          <Text style={styles.score}>You are the master</Text>
-          <Text style={styles.score}>Congrats you scored {score}% </Text>
-        </View>
-      );
+      title = 'Отлично';
+      tone = styles.high;
     }
-  }
-  render() {
     return (
-      <View style={{flex: 1}}>
-        <ImageBackground
-          source={images.backgroundImage}
-          resizeMode="cover"
-          style={styles.image}>
-          {/* <StatusBar barStyle="light-content" />
-          <View style={styles.toolbar}>
-            <TouchableOpacity onPress={() => this._onPressBack()}>
-              <Text style={styles.toolbarButton}>Back</Text>
-            </TouchableOpacity>
-            <Text style={styles.toolbarTitle}></Text>
-            <Text style={styles.toolbarButton}></Text>
-          </View> */}
-
-          {this.state.quizFinish ? (
-            <View style={styles.container}>
-              <View style={styles.circle}>
-                {this._scoreMessage(this.state.score)}
-              </View>
-            </View>
-          ) : (
-            <QuizTest quizFinish={score => this._quizFinish(score)} />
-          )}
-          <View style={{alignItems: 'center'}}>
-            <TouchableOpacity onPress={() => this._onPressBack()}>
-              <Image
-                source={icons.logout}
-                style={{
-                  width: 50,
-                  height: 50,
-                  tintColor: 'red',
-                }}
-              />
-            </TouchableOpacity>
-          </View>
-        </ImageBackground>
+      <View style={styles.innerContainer}>
+        <Text style={[styles.resultTitle, tone]}>{title}</Text>
+        <Text style={styles.score}>Результат {score}%</Text>
       </View>
     );
   }
+  render() {
+    return (
+      <SafeAreaView style={styles.screen}>
+        <View style={styles.topBar}>
+          <TouchableOpacity
+            onPress={() => this._onPressBack()}
+            style={styles.back}
+            accessibilityLabel="Назад">
+            <Text style={styles.backLabel}>‹</Text>
+          </TouchableOpacity>
+          <Text style={styles.heading}>Квиз</Text>
+          <View style={styles.backSpacer} />
+        </View>
+        {this.state.quizFinish ? (
+          <View style={styles.resultWrap}>
+            <View style={styles.card}>{this._scoreMessage(this.state.score)}</View>
+          </View>
+        ) : (
+          <QuizTest quizFinish={score => this._quizFinish(score)} />
+        )}
+      </SafeAreaView>
+    );
+  }
 }
-const scoreCircleSize = 300;
+
 const styles = StyleSheet.create({
-  image: {
+  screen: {
     flex: 1,
+    backgroundColor: colors.background,
   },
-  score: {
-    color: 'white',
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 4,
+  },
+  back: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: colors.card,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...shadow,
+  },
+  backSpacer: {
+    width: 40,
+    height: 40,
+  },
+  backLabel: {
+    color: colors.ink,
+    fontSize: 28,
+    lineHeight: 32,
+    marginTop: -2,
+  },
+  heading: {
+    flex: 1,
+    textAlign: 'center',
+    color: colors.ink,
     fontSize: 20,
-    fontStyle: 'italic',
+    fontWeight: '700',
   },
-  circle: {
+  resultWrap: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: scoreCircleSize,
-    height: scoreCircleSize,
-    borderRadius: scoreCircleSize / 2,
-    backgroundColor: 'green',
+    padding: 24,
+  },
+  card: {
+    width: '100%',
+    backgroundColor: colors.card,
+    borderRadius: 16,
+    paddingVertical: 36,
+    paddingHorizontal: 24,
+    ...shadow,
   },
   innerContainer: {
-    flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
   },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  toolbar: {
-    backgroundColor: '#81c04d',
-    paddingTop: 30,
-    paddingBottom: 10,
-    flexDirection: 'row',
-  },
-  toolbarButton: {
-    width: 55,
-    color: '#fff',
+  resultTitle: {
+    fontSize: 26,
+    fontWeight: '700',
     textAlign: 'center',
   },
-  toolbarTitle: {
-    color: '#fff',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    flex: 1,
+  score: {
+    color: colors.muted,
+    fontSize: 18,
+    marginTop: 10,
+  },
+  low: {
+    color: colors.incorrect,
+  },
+  mid: {
+    color: colors.timeout,
+  },
+  high: {
+    color: colors.correct,
   },
 });
 

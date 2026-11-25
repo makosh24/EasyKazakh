@@ -2,74 +2,118 @@ import React from 'react';
 import {
   SafeAreaView,
   Text,
-  Button,
-  ImageBackground,
   StyleSheet,
   View,
   ScrollView,
   TouchableOpacity,
-  Image
 } from 'react-native';
 
-import {images, icons} from '../constants';
+import {colors, shadow} from '../constants/theme';
+
+const paragraphsFrom = specification => {
+  const raw = Array.isArray(specification)
+    ? specification.join('\n')
+    : String(specification || '');
+  return raw
+    .split(/\r?\n/)
+    .map(line => line.trim())
+    .filter(Boolean);
+};
 
 const Details = ({navigation, route}) => {
+  const paragraphs = paragraphsFrom(route.params?.specification);
+
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <ImageBackground
-        source={images.backgroundImage}
-        resizeMode="cover"
-        style={styles.image}>
-        <View style={styles.container}>
-          <ScrollView>
-            <Text
-              style={{
-                fontWeight: 'bold',
-                fontSize: 20,
-                alignSelf: 'center',
-                marginTop: 20,
-              }}>
-              Правила
-            </Text>
-            <Text style={styles.text}>{route.params?.specification}</Text>
-          </ScrollView>
-        </View>
+    <SafeAreaView style={styles.screen}>
+      <View style={styles.topBar}>
         <TouchableOpacity
           onPress={() => navigation.goBack()}
-          style={{
-            width: 50,
-            height: 50,
-          }}>
-          <Image
-            source={icons.logout}
-            style={{
-              width: 50,
-              height: 50,
-              tintColor: 'red',
-            }}
-          />
+          style={styles.back}
+          accessibilityLabel="Назад">
+          <Text style={styles.backLabel}>‹</Text>
         </TouchableOpacity>
-      </ImageBackground>
+        <Text style={styles.heading}>Правила</Text>
+        <View style={styles.back} />
+      </View>
+      <ScrollView
+        contentContainerStyle={styles.scroll}
+        showsVerticalScrollIndicator={false}>
+        <View style={styles.sheet}>
+          {paragraphs.map((paragraph, index) => (
+            <Text
+              key={`${index}-${paragraph.slice(0, 12)}`}
+              style={
+                paragraph.endsWith('!') && paragraph.length < 24
+                  ? styles.note
+                  : styles.text
+              }>
+              {paragraph}
+            </Text>
+          ))}
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    margin: 20,
-    backgroundColor: 'yellow',
-    borderRadius: 15,
-    height: '80%',
-  },
-  image: {
+  screen: {
     flex: 1,
+    backgroundColor: colors.background,
+  },
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 4,
+  },
+  back: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: colors.card,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...shadow,
+  },
+  backLabel: {
+    color: colors.ink,
+    fontSize: 28,
+    lineHeight: 32,
+    marginTop: -2,
+  },
+  heading: {
+    flex: 1,
+    textAlign: 'center',
+    color: colors.ink,
+    fontSize: 20,
+    fontWeight: '700',
+  },
+  scroll: {
+    padding: 20,
+    paddingTop: 12,
+  },
+  sheet: {
+    backgroundColor: colors.card,
+    borderRadius: 16,
+    padding: 20,
+    ...shadow,
   },
   text: {
-    margin: 15,
-    fontSize: 15,
+    color: colors.ink,
+    fontSize: 16,
     fontWeight: '400',
-    lineHeight: 17,
-    textAlign: 'justify',
+    lineHeight: 24,
+    marginBottom: 14,
+  },
+  note: {
+    color: colors.gold,
+    fontSize: 15,
+    fontWeight: '700',
+    lineHeight: 22,
+    marginBottom: 8,
+    marginTop: 4,
   },
 });
 

@@ -7,139 +7,81 @@ import {
   TouchableWithoutFeedback,
   Modal,
   TouchableOpacity,
-  ImageBackground,
-  Dimensions,
-  Image,
 } from 'react-native';
 import {connect} from 'react-redux';
 
-import {images, icons} from '../constants';
+import {colors, shadow} from '../constants/theme';
 
 const FilterModal = ({
   isVisible,
   onClose,
   navigation,
-  route,
   data,
   specification,
 }) => {
   const modalAnimatedValue = React.useRef(new Animated.Value(0)).current;
-
   const [showFilterModal, setShowFilterModal] = React.useState(isVisible);
 
   React.useEffect(() => {
     if (showFilterModal) {
       Animated.timing(modalAnimatedValue, {
         toValue: 1,
-        duration: 500,
-        useNativeDriver: false,
+        duration: 280,
+        useNativeDriver: true,
       }).start();
     } else {
       Animated.timing(modalAnimatedValue, {
         toValue: 0,
-        duration: 500,
-        useNativeDriver: false,
+        duration: 220,
+        useNativeDriver: true,
       }).start(() => onClose());
     }
-  }, [showFilterModal]);
+  }, [showFilterModal, modalAnimatedValue, onClose]);
 
-  const modalY = modalAnimatedValue.interpolate({
+  const translateY = modalAnimatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [800, 200],
+    outputRange: [420, 0],
   });
 
-  return (
-    <Modal animationType="fade" transparent={true} visible={isVisible}>
-      <View
-        style={{
-          flex: 1,
-          // backgroundColor: '#7fffd4',
-        }}>
-        {/* Transparent Basckground */}
-        <TouchableWithoutFeedback onPress={() => setShowFilterModal(false)}>
-          <View
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-            }}></View>
-        </TouchableWithoutFeedback>
+  const go = (name, params) => {
+    setShowFilterModal(false);
+    navigation.navigate({
+      name,
+      params,
+      merge: true,
+    });
+  };
 
-        <Animated.View
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: modalY,
-            width: '100%',
-            height: '100%',
-            borderTopRightRadius: 12,
-            borderTopLeftRadius: 12,
-            borderWidth: 2,
-            borderColor: '#000',
-          }}>
-          <ImageBackground
-            source={images.backgroundImage}
-            resizeMode="cover"
-            style={styles.image}>
-            <View style={styles.container}>
-              <TouchableOpacity
-                style={styles.top}
-                onPress={() => {
-                  setShowFilterModal(false),
-                    navigation.navigate({
-                      name: 'Quiz',
-                      params: {data: data.data},
-                      merge: true,
-                    });
-                }}>
-                <Text style={{fontSize: 30}}>Tренажер</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.middle}
-                onPress={() => {
-                  setShowFilterModal(false),
-                  navigation.navigate({
-                    name: 'Quiz',
-                    params: {data: data.words},
-                    merge: true,
-                  });
-                }}>
-                <Text style={{fontSize: 30}}>Слова</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.bottom}
-                onPress={() => {
-                  setShowFilterModal(false),
-                    navigation.navigate({
-                      name: 'Details',
-                      params: {specification: specification},
-                      merge: true,
-                    });
-                }}>
-                <Text style={{fontSize: 30}}>Правила</Text>
-              </TouchableOpacity>
-            </View>
-          </ImageBackground>
-          <View style={{ alignItems: 'center'}}>
-            <TouchableOpacity
-              onPress={() => setShowFilterModal(false)}
-              style={{
-                width: 50,
-                height: 50,
-              }}>
-              <Image
-                source={icons.logout}
-                style={{
-                  width: 50,
-                  height: 50,
-                  tintColor: 'red'
-                }}
-              />
-            </TouchableOpacity>
-          </View>
-          <View style={{height: 200}} />
+  return (
+    <Modal animationType="fade" transparent visible={isVisible}>
+      <View style={styles.root}>
+        <TouchableWithoutFeedback onPress={() => setShowFilterModal(false)}>
+          <View style={styles.scrim} />
+        </TouchableWithoutFeedback>
+        <Animated.View style={[styles.sheet, {transform: [{translateY}]}]}>
+          <View style={styles.handle} />
+          <Text style={styles.title}>{data?.title || 'Урок'}</Text>
+          <Text style={styles.hint}>Выберите, с чего начать</Text>
+          <TouchableOpacity
+            style={styles.primary}
+            onPress={() => go('Quiz', {data: data.data})}>
+            <Text style={styles.primaryLabel}>Тренажёр</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.secondary}
+            onPress={() => go('Quiz', {data: data.words})}>
+            <Text style={styles.secondaryLabel}>Слова</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.secondary}
+            onPress={() => go('Details', {specification})}>
+            <Text style={styles.secondaryLabel}>Правила</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.close}
+            onPress={() => setShowFilterModal(false)}>
+            <Text style={styles.closeLabel}>Закрыть</Text>
+          </TouchableOpacity>
         </Animated.View>
       </View>
     </Modal>
@@ -147,38 +89,76 @@ const FilterModal = ({
 };
 
 const styles = StyleSheet.create({
-  container: {
+  root: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
   },
-  top: {
-    flex: 0.3,
+  scrim: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: colors.scrim,
+  },
+  sheet: {
+    backgroundColor: colors.card,
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    paddingHorizontal: 20,
+    paddingTop: 12,
+    paddingBottom: 28,
+    ...shadow,
+  },
+  handle: {
+    alignSelf: 'center',
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    backgroundColor: colors.line,
+    marginBottom: 16,
+  },
+  title: {
+    color: colors.ink,
+    fontSize: 22,
+    fontWeight: '700',
+    lineHeight: 28,
+  },
+  hint: {
+    color: colors.muted,
+    fontSize: 15,
+    lineHeight: 22,
+    marginTop: 6,
+    marginBottom: 18,
+  },
+  primary: {
+    backgroundColor: colors.accent,
+    borderRadius: 14,
+    paddingVertical: 16,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#daa520',
-    borderWidth: 5,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    marginBottom: 10,
   },
-  middle: {
-    flex: 0.3,
+  primaryLabel: {
+    color: '#FFFFFF',
+    fontSize: 17,
+    fontWeight: '700',
+  },
+  secondary: {
+    backgroundColor: colors.background,
+    borderRadius: 14,
+    paddingVertical: 16,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#daa520',
-    borderWidth: 5,
+    marginBottom: 10,
   },
-  bottom: {
-    flex: 0.3,
+  secondaryLabel: {
+    color: colors.ink,
+    fontSize: 17,
+    fontWeight: '600',
+  },
+  close: {
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#daa520',
-    borderWidth: 5,
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,
+    paddingVertical: 12,
   },
-  image: {
-    flex: 1,
-    padding: 12,
+  closeLabel: {
+    color: colors.muted,
+    fontSize: 15,
+    fontWeight: '600',
   },
 });
 

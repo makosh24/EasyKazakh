@@ -3,35 +3,23 @@ import {
   StyleSheet,
   View,
   Text,
-  ImageBackground,
-  Image,
   TouchableOpacity,
-  Alert,
-  TouchableWithoutFeedback,
+  SafeAreaView,
 } from 'react-native';
-import {
-  MatchingQuestion,
-  MultipleChoiceQuestion,
-  QuizContainer,
-  WritingQuestion,
-} from 'react-native-quiz-maker';
-import {images, icons} from '../constants';
+import {QuizContainer} from 'react-native-quiz-maker';
 import AnswerStatus from './AnswerStatus';
-
+import {colors, shadow} from '../constants/theme';
 
 function Quiz({navigation, route}) {
   const [answerStatus, setAnswerStatus] = React.useState(null);
   const [isCorrect1, setIsCorrect1] = React.useState(null);
 
-  React.useEffect(() => {
-    // console.log(answerStatus);
-  }, [answerStatus]);
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.screen}>
       {answerStatus && (
         <View style={styles.answerStatus}>
           <TouchableOpacity
-            style={{flex: 1}}
+            style={styles.answerTap}
             onPress={() => setAnswerStatus(false)}>
             <AnswerStatus
               type={
@@ -45,146 +33,101 @@ function Quiz({navigation, route}) {
           </TouchableOpacity>
         </View>
       )}
-      <ImageBackground
-        source={images.backgroundImage}
-        resizeMode="stretch"
-        style={styles.image}>
-        {/* <MatchingQuestion questionAnswerPairs = {[
-        {answer: 'hello', question: 'goodbye'},
-        {answer: 'see ya', question: 'be ya'},
-        {answer: 'mia', question: 'pia'}
-        ]} 
-        onSubmit={()=>console.log('submit')}
-        onContinue={()=>console.log('continue')}
-        instructionText='please answer'
-        isActiveQuestion={true}
-        />
-      <MultipleChoiceQuestion
-        question="How much does an apple cost?"
-        answer="$15.99"
-        allChoices={['$15.99', '$1.00', '$9.99']}
-        onSubmit={() => console.log('submit')}
-        onContinue={() => console.log('continue')}
-        instructionText="please answer"
-        isActiveQuestion={true}
-      /> */}
-        {/* <QuizContainer
-        questions={[
-          {
-            questionType: 'Writing',
-            question:
-              'What is the last name of The United States of Americas first President?',
-            answer: 'Washington',
-            headerContainerStyle: {backgroundColor: 'red'}
-          },
-          {
-            questionType: 'MultipleChoice',
-            question: 'What is 5 x 10 + 30?',
-            answer: '80',
-            allChoices: ['54', '85', '80'],
-            // instructionText: 'Press on or drag the best answer to place',
-          },
-          {
-            questionType: 'Matching',
-            questionAnswerPairs: [
-              {
-                answer: ' Equilateral',
-                question: 'Three sides of equal length',
-              },
-              {
-                answer: 'Acute',
-                question: 'Three angles less than 90 degrees',
-              },
-              {
-                answer: 'Obtuse',
-                question: 'One angle greater than 90 degrees',
-              },
-              { answer: 'Isosceles', question: 'Two sides of equal length' },
-            ],
-            instructionText:
-              'Match the definition with the appropriate triangle',
-          },
-        ]}
-        onSubmit={(isCorrect: boolean) => console.log(isCorrect)}
-        onComplete={(progress: number) => console.log('score: ', progress)}        
-      /> */}
-
-        {/* <WritingQuestion 
-        question='How many apples are in a dozen?'
-        answer='12'
-        onSubmit={() => console.log('submit')}
-        onContinue={() => console.log('continue')}
-        instructionText="please answer"
-        isActiveQuestion={true}
-      /> */}
-
+      <View style={styles.topBar}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={styles.back}
+          accessibilityLabel="Назад">
+          <Text style={styles.backLabel}>‹</Text>
+        </TouchableOpacity>
+        <Text style={styles.heading}>Тренажёр</Text>
+        <View style={styles.backSpacer} />
+      </View>
+      <View style={styles.quiz}>
         <QuizContainer
           questions={route.params?.data}
-          onSubmit={(isCorrect: boolean) => [
-            setIsCorrect1(isCorrect),
-            setAnswerStatus(true),
-          ]}
-          onComplete={(progress: number) =>{
-            if(progress>70) {
-              alert("У вас отличный результат")
+          onSubmit={(isCorrect: boolean) => {
+            setIsCorrect1(isCorrect);
+            setAnswerStatus(true);
+          }}
+          onComplete={(progress: number) => {
+            if (progress > 70) {
+              alert('У вас отличный результат');
             } else {
-              alert("Нужно стараться больше")
+              alert('Нужно стараться больше');
             }
             navigation.goBack();
-          }
-          }
-          continueLabelStyle={{
-            fontSize: 20,
-            color: '#000',
-            fontWeight: '500'
           }}
-          continueButtonStyle={{
-            backgroundColor: 'green',
-            borderColor: 'blue',
-            borderWidth: 1
-          }}
+          continueLabelStyle={styles.continueLabel}
+          continueButtonStyle={styles.continueButton}
         />
-
-        <View style={{alignItems: 'center'}}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Image
-              source={icons.logout}
-              style={{
-                width: 50,
-                height: 50,
-                tintColor: 'red',
-              }}
-            />
-          </TouchableOpacity>
-        </View>
-      </ImageBackground>
-    </View>
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
+    backgroundColor: colors.background,
+  },
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 4,
+  },
+  back: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: colors.card,
     alignItems: 'center',
     justifyContent: 'center',
+    ...shadow,
   },
-  image: {
-    // flex: 1,
+  backSpacer: {
+    width: 40,
+    height: 40,
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  backLabel: {
+    color: colors.ink,
+    fontSize: 28,
+    lineHeight: 32,
+    marginTop: -2,
   },
-  textStyle: {
-    fontSize: 40,
-    color: 'red',
+  heading: {
+    flex: 1,
+    textAlign: 'center',
+    color: colors.ink,
+    fontSize: 20,
+    fontWeight: '700',
+  },
+  quiz: {
+    flex: 1,
+    paddingHorizontal: 8,
+  },
+  continueButton: {
+    backgroundColor: colors.accent,
+    borderRadius: 14,
+    borderWidth: 0,
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+  },
+  continueLabel: {
+    fontSize: 17,
+    color: '#FFFFFF',
+    fontWeight: '700',
   },
   answerStatus: {
     position: 'absolute',
     width: '100%',
     height: '100%',
     zIndex: 9999,
+  },
+  answerTap: {
+    flex: 1,
   },
 });
 

@@ -4,6 +4,7 @@ import {
   TouchableWithoutFeedback
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import {colors} from '../theme';
 export default class Animbutton extends Component {
   constructor(props) {
      super(props);
@@ -51,8 +52,8 @@ export default class Animbutton extends Component {
   render() {
     return (
       <TouchableWithoutFeedback onPress={() => this._onPress()}>
-        <Animatable.View ref="view" style={{ margin:10, paddingTop :10, paddingBottom: 10, paddingRight: 20, paddingLeft: 20, backgroundColor: this.state.status ? this.props.onColor : "#bdbdbd", borderRadius:20}}>
-          <Text style={{color: this.state.status ? "white" : "#696969", fontWeight: "bold"}}>{this.props.text}</Text>
+        <Animatable.View ref="view" style={{ margin:10, paddingTop :14, paddingBottom: 14, paddingRight: 20, paddingLeft: 20, backgroundColor: this.state.status ? colors.accent : colors.card, borderRadius:14, borderWidth: 1, borderColor: this.state.status ? colors.accent : colors.line}}>
+          <Text style={{color: this.state.status ? "#FFFFFF" : colors.ink, fontWeight: "600", fontSize: 16}}>{this.props.text}</Text>
         </Animatable.View>
       </TouchableWithoutFeedback>
     );
